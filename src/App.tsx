@@ -15,15 +15,15 @@ function App() {
   }, [])
   return (
     <div className="App bg-black h-screen w-full">
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex flex-col justify-center items-center h-screen">
         <img src={moon2} alt="moon" className="max-w-full max-h-full" />
+        <div
+          className="apply-button"
+          data-hackathon-slug="meenhacks"
+          data-button-theme="dark"
+          // style={{"height: 44px, width: 312px"}}
+        ></div>
       </div>
-      <div
-        className="apply-button h-[44px] w-[312px] flex items-start justify-center"
-        data-hackathon-slug="meenhacks"
-        data-button-theme="light"
-        // style={{"height: 44px width: 312px"}}
-      ></div>
 
     </div>
   )
